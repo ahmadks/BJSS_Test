@@ -64,8 +64,9 @@ public class DispatcherService {
 							+ (int) (of.getValue().getDiscount() * 100 )+ "% off: -";
 					Good good = goods.getGoodsMap().get(applyFor);
 					
-					this.discount = good.getPrice() * unitDis * of.getValue().getDiscount();
-					respMsg.add(msg.concat(getFormattedCurrency(discount)));
+					float disc = good.getPrice() * unitDis * of.getValue().getDiscount();
+					this.discount += disc;
+					respMsg.add(msg.concat(getFormattedCurrency(disc)));
 				}
 			}
 

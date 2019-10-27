@@ -48,7 +48,7 @@ public class DispatcherServiceTest {
 		DispatcherService cashier = DispatcherService.getDispatcher(getBasket(input));
 		Assert.assertEquals("Subtotal: £4.10", cashier.calculateSubTotal());
 		Assert.assertEquals("[Bread 50% off: -40p, Apples 10% off: -20p]", Arrays.toString(cashier.calculateDiscount().toArray()));
-		Assert.assertEquals("Total: £3.90", cashier.getTotal());
+		Assert.assertEquals("Total: £3.50", cashier.getTotal());
 
 
 	}
