@@ -1,0 +1,7 @@
+Assumption taken to complete the test
+
+- Will minimize the number of external jar dependencies in the code.
+- Will prioritize a first working version to keep the solution in 3h of development before testing all classes and cases.
+- Any element in the basket not declared in Consumer Data will be ignored.
+- Main app is in Main.java
+ 

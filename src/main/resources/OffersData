@@ -1,0 +1,4 @@
+#offerId,requiredUnits,validFrom,validTo,applyFor,discount
+#Dates format like dd/mm/yyyy
+Apples,1,26/10/2019,2/11/2019,Apples,0.1
+Soup,2,26/10/2019,2/11/2019,Bread,0.5
