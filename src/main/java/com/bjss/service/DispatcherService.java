@@ -36,7 +36,7 @@ public class DispatcherService {
 			calculateSubTotal();
 		if (discount == null)
 			calculateDiscount();
-		this.total = (Float.valueOf((int)(subTotal*100)) - Float.valueOf(((int) (discount*100))))/100f;
+		this.total = subTotal - (Float.valueOf(((int) (discount*100))))/100f;
 
 		return "Total: " + getFormattedCurrency(total);
 	}
